@@ -1,0 +1,57 @@
+@font-face {
+  font-family: hey;
+  src: url(./NType82-Regular.otf);
+}
+*{
+  padding: 0;margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  font-family: hey;
+}
+/* .box1{
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+  /* background: linear-gradient(to right red,green); */
+/* }  */
+/* 
+.box2{
+  height: 400px;
+  width: 400px; */
+/* background: conic-gradient(violet,indigo,blue,green,yellow,red,violet); */
+/* background: linear-gradient(violet,indigo,blue,green,yellow,red,violet); */
+/* background: redial-gradient(violet,indigo,blue,green,yellow,red,violet); */
+/* } */
+
+/* .outer{
+  height: 400px;
+  width: 400px;
+  background-color: lightseagreen;
+}
+
+.inner{
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+} */
+
+
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: violet;
+  /* background-image: url(./coding.jpg); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; *//
+  
+}
+
+

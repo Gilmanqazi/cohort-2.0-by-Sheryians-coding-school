@@ -1,0 +1,45 @@
+@font-face {
+  font-family: nothing;
+  src: url(./Ndot-55.otf);
+}
+*{
+  padding: 0;margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+  /* background-color: black; */
+  background-image: url(https://cdn.sanity.io/images/gtd4w1cq/production/4ef2af4fc4259cb398efe107002fca5355159f73-4096x2305.jpg?auto=format);
+  background-size: cover;
+  background-position: top 20%;
+  padding-top: 1px;
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  color:rgb(255, 255, 255);
+  font-weight: 600; 
+  font-family: nothing;
+
+}
+
+button{
+  color: white;
+  margin-top: 10px;
+  font-size: 10px;
+  background-color:#0b3a4a;
+  padding: 5px 10px;
+  /* background-color: transparent; */
+  /* border: 3px solid white; */
+  border-radius: 10px;
+  border: none;
+  font-family: nothing;
+}
