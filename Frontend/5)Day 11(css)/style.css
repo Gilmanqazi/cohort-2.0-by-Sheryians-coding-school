@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+/* 
+#car1{
+  width: 100px;
+  height: 200px;
+  background-color: yellowgreen;
+}
+
+#car2{
+  position: absolute
+  ;
+  left: 50%;
+  width: 130px;
+  height: 230px;
+  background-color: rgb(205, 50, 97);
+} */
+
+/* #car3{
+  width: 150px;
+  height: 250px;
+  background-color: rgb(50, 156, 205);
+} */
+/* 
+.box{
+  /* position: relative; */
+  /* width: 400px; */
+  /* height: 400px; */
+  /* background-color: rgb(50, 156, 205); */
+  /* position: relative; */
+/* } */
+/* .smallbox{ */
+  /* position: absolute; */
+  /* left: 50%; */
+  /* height: 200px; */
+  /* width: 200px; */
+  /* background-color: yellowgreen; */
+/* } */
+
+/* .minibox{ */
+  /* position: absolute; */
+  /* left: 50%; */
+  /* height: 100px; */
+  /* width: 100px; */
+  /* background-color: rgb(60, 50, 205); */
+/* } */
+
+/* .orminibox{
+  position: absolute;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(205, 50, 89);
+} */ 
+
+/* #main{
+  height: 3000px;
+  width: 100%;
+  background-color: #5555;
+}
+.side{
+  position: sticky;
+  height: 200px;
+  width: 100px;
+  top: 30%;
+  left: 20%;
+  background-color: red;
+} */
+/* 
+.parent{
+  width: 100%;
+  background-color: black;
+}
+
+.child1{
+height: 800px;
+/* background-color: red; */
+/* width: 100%; */
+/* }
+
+.sticky{
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+} */
+
+/* .parent2{
+  height: 2000px;
+  width: 100%;
+  background-color: aqua;
+}
+.sticky1{
+  position: sticky;
+  top: 10%;
+  left: 0%;
+  height: 200px;
+  width: 300px;
+  background-color: yellow;
+}
+
+.child2{
+  height: 1000px;
+  width: 100%;
+
+} */ 
