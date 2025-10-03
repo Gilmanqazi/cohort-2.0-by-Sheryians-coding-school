@@ -1,0 +1,183 @@
+@font-face {
+  font-family: nasa;
+  src: url(./Nasalization\ Rg.otf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: nasa;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(238, 215, 187);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main{
+  height: 94%;
+  width: 88%;
+  /* background: linear-gradient(to right, rgb(183,210,220,0.9),rgb(250,230,220,0.9)); */
+  background: linear-gradient( to right,#d5e7ec,#fcdfc9);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+.nav{
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+}
+.nav h4{
+color: black;
+gap: 8px;
+padding: 35px 30px;
+font-size: 14px;
+font-weight: 400;
+}
+
+.nav h3{
+  position: absolute;
+  padding: 10px 40px;
+  font-size: 15px;
+ font-weight: 400;
+ right: 2%;
+ top: 25px;
+ border: 1px solid black;
+ border-radius: 20px;
+}
+
+.nav h1{
+  position: absolute;
+  font-size: 25px;
+left: 8%;
+top: 5%;
+font-weight: 100;
+}
+.nav h1 span{
+  color: white;
+}
+
+.laurel{
+  position: absolute;
+  top: 20%;
+  left: 22%;
+}
+.laurel img{
+  height: 60px;
+}
+
+
+#main>img{
+  position: absolute;
+  left: 20%;
+  bottom: 0%;
+  top: 5%;
+  height: 600px;
+  width: 450px;
+}
+.ri-star-fill{
+  position: relative;
+  top: 27%;
+left: 13%;
+  color: rgb(247, 247, 36);
+}
+.headings{
+  position: absolute;
+  top: 46%;
+  left: 13%;
+}
+.h1{
+color: white;
+}
+.h2{
+  /* position: relative; */
+  color: white;
+  /* z-index: -1; */
+  }
+  .h2 span{
+    position: relative;
+    z-index: -1;
+  }
+  .h3{
+    position: relative;
+    color: white;
+    z-index: -1;
+    }
+    .h4{
+      color: white;
+      }
+
+      .footer{
+        position: absolute;
+        top: 84%;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(43, 43, 44);
+         overflow: hidden;
+        border-bottom-left-radius: 30px ;
+        border-bottom-right-radius: 30px ;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      .footer img{
+        /* object-fit: cover; */
+        /* object-position: center; */
+        position: relative;
+        height: 40px;
+        width: 50px;
+        left: 2%;
+        border-radius: 5px;
+        margin-left: 2px;
+      }
+      .footer h1{
+        position: relative;
+        left: 2.5%;
+        color: white;
+      }
+      .footer button{
+        position: relative;
+        left: 55%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .cloths{
+        background-color: #fadfca;
+        backdrop-filter: blur(30px);
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        height: 250px;
+        width: 200px;
+        /* background-color: red; */
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+
+      .cloths h1,p{
+        text-align: center;
+        position: relative;
+        top: 10%;
+      }
+      .cloths h1{
+        font-size: 25px;
+      }
+      .cloths p{
+        font-size: 12px;
+        padding: 0 30px;
+      }
+      .cloths img{
+
+        position: relative;
+        top: 10%;
+        left: 30px;
+        height: 140px;
+      }
