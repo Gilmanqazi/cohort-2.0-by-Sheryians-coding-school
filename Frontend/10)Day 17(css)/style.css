@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+height: 100%;
+width:100%;
+background-color: black;
+}
+/* 
+#parent{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 20% 20% 30% 30%;
+  grid-template-rows: 20% 20% 50% 10%;
+  
+}
+.box{
+  background-color: crimson;
+  border: 5px solid black;
+
+} */
+/* 
+h1{
+  font-size: 150px;
+  text-align: center;
+  color: transparent;
+background-image: url(https://media.tenor.com/qe6_RTJq5jIAAAAM/design-3d.gif);
+background-clip: text;
+} */
+/* 
+h1{
+font-size: 200px;
+color: transparent;
+-webkit-text-stroke: 2px white;
+} */
+
+#parent{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+ .child1{
+  height: 50%;
+  width: 100%;
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+align-items: center;
+gap: 20px;
+overflow-x: auto;
+overflow-y: hidden;
+flex-wrap: nowrap;
+}
+/* .child1::-webkit-scrollbar{
+scrollbar-width: 10px;
+} */
+.child1::-webkit-scrollbar-thumb{
+background-color: hotpink;
+  border-radius: 20px;
+  height: 20px;
+}
+.child1 .box1{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box1 img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover; 
+ border-radius: 20px;
+}
+
+.child1 .box2{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box2 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
+.child1 .box3{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box3 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
+.child1 .box4{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box4 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
+.child1 .box5{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box5 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+.child1 .box6{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box6 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+ 
+.child1 .box7{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box7 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+.child1 .box8{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box8 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
+ .child2{
+  height: 50%;
+  width: 100%;
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+align-items: center;
+gap: 20px;
+/* overflow-x: auto; */
+overflow-y: auto;
+flex-wrap: wrap;
+}
+/* .child1::-webkit-scrollbar{
+scrollbar-width: 10px;
+} */
+.child2::-webkit-scrollbar-thumb{
+background-color: hotpink;
+  border-radius: 20px;
+  height: 20px;
+}
+.child2 .box1{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box1 img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover; 
+ border-radius: 20px;
+}
+
+.child2 .box2{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box2 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
+.child2 .box3{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box3 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
+.child2 .box4{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box4 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
+.child2 .box5{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box5 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+.child2 .box6{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box6 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+ 
+.child2 .box7{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box7 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+.child2 .box8{
+  flex: 0 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.box8 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+ }
+
