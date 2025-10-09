@@ -1,0 +1,223 @@
+@font-face {
+  font-family: gk;
+  src: url(./Dosis/Dosis-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gk;
+}
+html, body{
+height: 100%;
+width:100%;
+}
+main{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+nav ul {
+  height: 10vh;
+  width: 100%;
+background-color: #575454;
+display: flex;
+align-items: center;
+gap: 5vw;
+  }
+  nav ul li:first-child{
+    margin-left: 5rem;
+  }
+
+  nav ul li{
+    list-style: none;
+  }
+ul h1{
+color: white;
+padding: 5px 30px;
+}
+ul button{
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  margin: 5vh 10%;
+  padding: 1rem 2rem;
+}
+ul button:hover{
+  background-color: white;
+  color: red;
+  border: none;
+  transition: all 0.5s;
+}
+  ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.3em;
+  }
+
+  ul li a:hover{
+    background-color: red;
+    border-radius: 10px;
+    transition: all 0.4s;
+    border: none;
+  }
+
+  ul h1::selection{
+    background-color: black;
+    color: white;
+  }
+
+  header{
+    height: 85vh;
+    width: 90vw;
+    background-color: rgba(245, 245, 245, 0.363);
+    margin: 2vh auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  header img{
+height: 80vh;
+display: flex;
+align-items: center;
+transform: rotate(25deg);
+position: relative;
+z-index: 1;
+  }
+
+  .headings{
+    margin: 20vh 0;
+  }
+
+  .headings h3{
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 0.4rem;
+  }
+  .headings h2{
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 0.4rem;
+  }
+  .headings h1{
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 0.4rem;
+    font-weight: bolder;
+  }
+
+  .headings button{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-style: bolder;
+  }
+
+  .headings button:hover{
+    background-color: white;
+    color: red;
+    border: none;
+    transition: all 0.5s;
+  }
+
+ section{
+    height: 100vh;
+    width: 100%;
+    padding: 5vh 5vw;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 250px 250px 250px ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "earphone watch laptop laptop"
+                        "console console speaker oculus"
+                        ;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .earphone{
+    background-color: black;
+    grid-area: earphone;
+    border-radius: 20px;
+    color: white;
+    background-image: url(./earphone.png);
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+  }
+  .watch{
+    background-color: rgb(251, 255, 0);
+    grid-area: watch;
+    border-radius: 20px;
+    background-image: url(./watch.png);
+    background-size: cover;
+    background-position: top center;
+  
+  }
+  .laptop{
+    background-color: skyblue;
+    grid-area: laptop;
+    border-radius: 20px;
+    width: 40vw;
+    height: 40vh;
+    background-image: url(./laptop.png);
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+
+  }
+  .console{
+    background-color: #A3B6FA;
+    grid-area: console;
+    border-radius: 20px;
+    background-image: url(./mobile.png);
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+   
+  }
+  .oculus{
+    background-color: #4F2617;
+    grid-area: oculus;
+    border-radius: 20px;
+    width: 20vw;
+    background-image: url(./oculus.png);
+    background-size: cover;
+    background-position: left 10% right 10% ;
+    background-repeat: no-repeat;
+  }
+  .speaker{
+    background-color: black;
+    grid-area: speaker;
+    border-radius: 20px;
+    height: 40vh;
+    background-image: url(./speaker.png);
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+  }
+
+  .botm{
+    height: 70px;
+    width: 100%;
+    background-color: #4F2617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 0.7rem;
+    color: white;
+    margin: auto;
+  }
+  .botm i{
+    color: white;
+    font-size: 2rem;
+  }
