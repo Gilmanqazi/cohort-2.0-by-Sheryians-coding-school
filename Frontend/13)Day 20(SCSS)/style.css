@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #2c3e50;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+main section {
+  flex-grow: 1;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:hover {
+  flex-grow: 2;
+  transition: all 0.9s ease;
+  cursor: pointer;
+}
+
+section:nth-child(1) {
+  background-image: url(./virat1\ -\ Copy.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+section:nth-child(2) {
+  background-image: url(./vk.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+section:nth-child(3) {
+  background-image: url(./viratmid.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+section:nth-child(4) {
+  background-image: url(./virat4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+section:nth-child(5) {
+  background-image: url(./virat5.jpg);
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
