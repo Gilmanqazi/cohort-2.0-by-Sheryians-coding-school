@@ -1,0 +1,235 @@
+@font-face {
+    font-family: halwa;
+    src: url(./HelveticaNeueBlack.otf);
+}
+
+@font-face {
+    font-family: octosquare;
+    src: url(./tt-octosquares-trial.bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #f5f5f5;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.rem;
+    font-family: octosquare;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.nav-center a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.2rem;
+    font-family: octosquare;
+}
+
+.nav-center a:hover {
+    color: #007bff;
+    transition: 0.3s;
+}
+
+.nav-right button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: octosquare;
+}
+
+.nav-right button:hover {
+    background-color: #0056b3;
+}
+
+@media(max-width:768px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .nav-center {
+        gap: 3vw;
+    }
+}
+
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+
+#left-content {
+    height: 100vh;
+    width: 50%;
+    margin-top: 1px;
+    border-radius: 20px;
+    /* background: linear-gradient(135deg, pink 0%, rgb(233, 136, 152) 35%, rgb(235, 115, 135) 60%, pink 100%); */
+}
+
+#left-content span {
+    height: 4vh;
+    width: 6vw;
+    background: linear-gradient(90deg, #7956F3 0%, rgb(104, 141, 241) 35%, #7956F3 60%, #7956F3 100%);
+    border-radius: 30px;
+    display: flex;
+    padding: 15px 15px;
+    margin-top: 42px;
+    margin-left: 20px;
+    box-shadow: black 0px 4px 8px 0px;
+}
+#left-content span:hover {
+    box-shadow: white 0px 4px 8px 0px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+#left-content h1 {
+    font-size: 2rem;
+    font-family: octosquare;
+    ;
+    margin: 10px;
+    text-align: center;
+    /* box-shadow: black 0px 4px 8px 0px; */
+}
+
+#left-content ::selection {
+    background-color: black;
+    color: white;
+}
+
+#left-content button {
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.466);
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+
+#left-content button:hover {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: white 0px 4px 8px 0px;
+}
+
+.para {
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: octosquare;
+}
+
+.buttons{
+    display: flex;
+    text-align: center;
+    gap: 15px;
+    margin: 2px 10px;
+}
+
+.para-2{
+    height: 9vh;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1.rem;
+    font-family: octosquare;
+}
+.h{
+    text-align: center;
+    font-family: octosquare;
+    display: flex;
+}
+.h i{
+    color: black;
+}
+
+
+#right-content {
+    height: 100vh;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "header header"
+        "left-b right-b"
+    ;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.header {
+    grid-area: header;
+    border-radius: 20px;
+    background-image: url(https://media.istockphoto.com/id/1283876836/photo/3d-layered-shape-cyborg-head-on-neon-colored-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=MZYAEh4AJuRBbssHqWvKtnmqikcAGW36OZz_VLzw2ac=);
+    background-size: cover;
+    background-position: center;
+}
+.header h3{
+    color: white;
+ padding: 10px 20px;
+    font-family: octosquare;
+}
+.header .btm-para p{
+    margin-top: 100px;
+    margin-right: 400px;
+    padding: 0 10px;
+    color: white;
+}
+.left-b {
+    /* background-color: blue; */
+    grid-area: left-b;
+    border-radius: 20px;
+    background-image: url(https://media.istockphoto.com/id/1310293181/photo/deep-learning-artificial-intelligence-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=TD12ELefmR5cGt3Sgc58vBpi0tg3eQSShN2UVz-GvCs=);
+    background-size: cover;
+    background-position: center;
+}
+
+.right-b {
+    /* background-color: blue; */
+    grid-area: right-b;
+    border-radius: 20px;
+    background-image: url(https://media.istockphoto.com/id/1173458627/photo/abstract-digital-human-face.webp?a=1&b=1&s=612x612&w=0&k=20&c=clZJQ1giHTbF9zxvAu9UJbYSj2t7etHtidt6vnLTpHc=);
+    background-size: cover;
+    background-position: center;
+}
+
