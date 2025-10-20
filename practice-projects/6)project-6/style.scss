@@ -1,0 +1,469 @@
+@font-face {
+  font-family: octo;
+  src: url(./tt-octosquares-trial.bold.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: octo;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+
+  section.view-1{
+width: 100%;
+display: flex;
+flex-direction: column;
+
+.right{
+  width: 100%;
+  margin-top: 10%;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.left{
+  width: 100%;
+  text-align: center;
+  padding: 1.1rem 1rem;
+
+  h1{
+    font-size: 2.5rem;
+  }
+}
+
+}
+
+
+section.view-2{
+  width: 100%;
+  // border-bottom: 3px solid gray;
+  .paragraph{
+    
+  p{
+    font-size: 1.6rem;
+    padding: 2rem 1.6rem;
+    text-align: center;
+
+  }
+    }
+}
+
+section.view-3{
+  width: 100%;
+  display: flex;
+  padding: 1rem 1.3rem;
+  flex-direction: column;
+
+ 
+
+  h3{
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  p{
+    padding: 1rem;
+    font-size: 1.1rem;
+    opacity: 0.4;
+  }
+  .card{
+    width: 100%;
+
+    img{
+      width: 100%;
+      padding: 1rem 0;
+    }
+  }
+}
+
+section.view-4{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.1rem 2rem;
+
+h3{
+  font-size: 1.2rem;
+}
+h1{
+  font-size: 2.7rem;
+  padding-top: 1.4rem;
+}
+p{
+  font-size: 1.2rem;
+  opacity: 0.6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+  .card{
+    img{
+      width: 100%;
+    }
+  }
+
+  .box{
+    padding: 1.1rem 0rem;
+    a{
+      color: blue;
+      padding: 0.8rem 0.5rem;
+      border: 1px solid blue;
+      border-radius: 10rem;
+      text-decoration: none;
+    }
+    small{
+      font-size: 0.8rem;
+      padding-left: 0.2rem;
+    }
+  }
+}
+
+section.view-5{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.1rem 2rem;
+
+h3{
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+h1{
+  font-size: 2.7rem;
+  padding-top: 1.4rem;
+}
+p{
+  font-size: 1.2rem;
+  opacity: 0.6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+  .card{
+    img{
+      width: 100%;
+    }
+  }
+
+  .box{
+    padding: 1.1rem 0rem;
+    a{
+      color: white;
+      background-color: blue;
+      padding: 1rem 1.2rem;
+      border-radius: 10rem;
+      text-decoration: none;
+    }
+  }
+}
+
+section.view-6{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.1rem 2rem;
+
+h3{
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+h1{
+  font-size: 2.7rem;
+  padding-top: 1.4rem;
+}
+p{
+  font-size: 1.2rem;
+  opacity: 0.6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+  .card{
+    img{
+      width: 100%;
+    }
+  }
+
+  .box{
+    padding: 1.1rem 0rem;
+    a{
+      color: blue;
+      padding: 1rem 1.4rem;
+      border: 1px solid blue;
+      border-radius: 10rem;
+      text-decoration: none;
+    }
+  }
+}
+
+section.view-7{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.1rem 2rem;
+
+h3{
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+h1{
+  font-size: 2.7rem;
+  padding-top: 1.4rem;
+}
+p{
+  font-size: 1.2rem;
+  opacity: 0.6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+  .card{
+    img{
+      width: 100%;
+    }
+  }
+
+  .box{
+    padding: 1.1rem 0rem;
+    a{
+      color: white;
+      background-color: blue;
+      padding: 1rem 1.2rem;
+      border-radius: 10rem;
+      text-decoration: none;
+    }
+  }
+}
+
+section.container{
+  // height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #04244a;
+  background-image: url(./get-started-background..png);
+  background-size: cover;
+  border-radius: 3rem;
+
+  .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+      font-size: 3rem ;
+      color: white;
+      margin-top: 4rem;
+      padding: 1rem 4rem ;
+    }
+    p{
+      font-size: 1.1rem ;
+      color: white;
+      padding: 1rem 4rem ;
+    }
+  }
+  .buttons{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+padding: 1rem 4rem;
+padding-bottom: 10rem;
+
+a{
+  background-color: white;
+  color: #04244a;
+  padding: 1.3rem 2.2rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+  border-radius: 3rem;
+align-items: center;
+}
+p{
+  color: white;
+  padding: 1.1rem 1.9rem;
+
+  font-size: 1rem;
+  border-radius: 3rem
+}
+  }
+}
+
+.btm-info{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  gap: 5rem;
+}
+
+.social-icons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  i{
+    color: #111;
+    font-size: 2rem;
+  }
+}
+
+.btm-info2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    padding: 4rem 3rem;
+  }
+}
+}
+
+@media (min-width: 1366px){
+main{
+  section.view-1{ 
+    flex-direction: row-reverse;
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    .left{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     h1{
+padding: 2rem 6rem;
+font-size: 3.9rem;
+font-weight: bold;
+     }
+    }
+    
+  }
+
+  section.view-2{
+    .paragraph{
+      padding: 1.1rem 5rem;
+      p{
+font-size: 1.8rem;
+      }
+    }
+  }
+
+  section.view-3{
+    padding: 1rem 3rem;
+    flex-direction: row;
+
+
+    .box{
+      padding: 1rem 3rem;
+
+      p{
+        opacity: 0.4;
+      }
+    }
+
+  }
+
+  section.view-4{
+  flex-direction: row-reverse;
+  gap: 20rem;
+
+.card,.box{
+  width: 50%;
+}
+
+.box{
+padding-top: 6rem;
+padding-left: 5rem;
+
+small{
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+}
+}
+}
+
+section.view-5{
+  flex-direction: row;
+  gap: 20rem;
+
+.card,.box{
+  width: 50%;
+}
+
+.box{
+padding-top: 6rem;
+padding-left: 5rem;
+
+small{
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+}
+}
+}
+
+section.view-6{
+  flex-direction: row-reverse;
+  gap: 20rem;
+
+.card,.box{
+  width: 50%;
+}
+
+.box{
+padding-top: 6rem;
+padding-left: 5rem;
+
+small{
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+}
+}
+}
+
+section.view-7{
+  flex-direction: row;
+  gap: 20rem;
+
+.card,.box{
+  width: 50%;
+}
+
+.box{
+padding-top: 6rem;
+padding-left: 5rem;
+
+small{
+  font-size: 0.8rem;
+  margin-left: 0.1rem;
+}
+}
+}
+
+
+section.container{
+height: 50vh;
+width: 100%;
+
+}
+
+.btm-info{
+  flex-direction: row;
+justify-content: flex-end;
+gap: 15rem;
+}
+
+.btm-info2{
+justify-content: center;
+  padding: 5rem 10rem;
+}
+}
+}
