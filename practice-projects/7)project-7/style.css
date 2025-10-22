@@ -1,0 +1,248 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+main .nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.1rem;
+  gap: 4rem;
+}
+main .nav ::selection {
+  color: white;
+  background-color: black;
+}
+main .nav .logo {
+  font-size: 0.7rem;
+}
+main .nav .center-nav {
+  display: none;
+}
+main .nav .right-nav {
+  text-decoration: none;
+  background-color: black;
+  padding: 1rem 2.7em;
+  border: none;
+  border-radius: 2rem;
+}
+main .nav .right-nav a {
+  color: white;
+}
+main section.hero-1 {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.1rem 1.1rem;
+}
+main section.hero-1 h1 {
+  font-size: 3rem;
+}
+main section.hero-1 span {
+  color: orange;
+}
+main section.hero-1 p {
+  padding-top: 2rem;
+}
+main section.hero-1 .right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10rem 10rem;
+  padding: 1.1rem 1.1rem;
+  grid-template-areas: "header left-side" "header  bottom-side";
+  grid-gap: 2rem;
+}
+main section.hero-1 .right header {
+  background-color: red;
+  grid-area: header;
+  background-image: url(./The\ Colosseum\,\ Rome.jpeg);
+  background-size: cover;
+  border-radius: 0.7rem;
+}
+main section.hero-1 .right .left-side {
+  background-color: lightblue;
+  grid-area: left-side;
+  background-image: url(./taj-mahal.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+}
+main section.hero-1 .right .bottom-side {
+  background-color: lime;
+  grid-area: bottom-side;
+  background-image: url(./india-gate.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+}
+main section.hero-1 .right button {
+  padding: 1rem 2rem;
+  margin: 2rem 0rem;
+  background-color: orangered;
+  border: none;
+  border-radius: 1.8rem;
+  color: white;
+  font-size: 0.9rem;
+}
+main section.hero-1 .right button:hover {
+  color: black;
+  background-color: #f4f4f4;
+  border: 1px solid orangered;
+  transition: 0.2s;
+}
+main section.hero-2 {
+  width: 100%;
+  padding: 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+main section.hero-2 .place {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto; /* ✅ horizontal scroll allow karega */
+  overflow-y: hidden; /* vertical scroll hatane ke liye */
+  scroll-behavior: smooth; /* optional, smooth scrolling */
+  padding: 1rem;
+  background: #f4f4f4;
+}
+main section.hero-2 .place img {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+main section.hero-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.hero-3 h1 {
+  padding-bottom: 1.1rem;
+  text-transform: capitalize;
+}
+main section.hero-3 .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1.1rem;
+}
+main section.hero-3 .left p {
+  padding: 1.1rem;
+  font-size: 1.4rem;
+}
+main section.hero-3 .left img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+main section.hero-3 .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.1rem 1.1rem;
+}
+main section.hero-3 .right .imgs {
+  gap: 2rem;
+}
+main section.hero-3 .right .imgs h1 {
+  padding: 1.1rem;
+}
+main section.hero-3 .right .imgs img {
+  height: 50%;
+  width: 80%;
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (min-width: 600px) {
+  main {
+    align-items: center;
+  }
+  main .nav {
+    justify-content: space-between;
+    padding: 2rem 2rem;
+  }
+  main .nav .center-nav {
+    display: none;
+  }
+  main section.hero-1 {
+    flex-direction: column;
+  }
+  main section.hero-1 .right {
+    justify-content: center;
+    grid-template-columns: 15rem 15rem;
+    gap: 1rem;
+  }
+  main section.hero-1 p {
+    padding: 2rem 8rem;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    padding: 2rem 2rem;
+  }
+  main .nav {
+    justify-content: space-between;
+    padding: 2rem 2rem;
+  }
+  main .nav .center-nav {
+    display: flex;
+    gap: 1.2rem;
+  }
+  main .nav .center-nav a {
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  main section.hero-1 {
+    flex-direction: row;
+  }
+  main section.hero-1 .right {
+    grid-template-columns: 15rem 15rem;
+    gap: 1rem;
+  }
+  main section.hero-1 p {
+    padding: 2rem 1rem;
+  }
+  main section.hero-2 .place {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    justify-content: space-around;
+  }
+  main section.hero-2 .place img {
+    width: 30%;
+  }
+  main section.hero-3 {
+    flex-direction: row;
+  }
+  main section.hero-3 .right {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
