@@ -1,0 +1,440 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem 0rem;
+
+
+    .logo {
+      font-size: 1.3rem;
+    }
+
+    .center-nav {
+      display: flex;
+      gap: 1rem;
+      font-size: 1rem;
+
+      a {
+        text-decoration: none;
+        color: #111;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  section.hero-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./mobile-mountain.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #221313;
+    }
+
+    h3 {
+      font-size: 2.3rem;
+      font-weight: 400;
+    }
+
+    .btn-1 {
+      display: flex;
+
+      button {
+        margin-top: 2rem;
+        padding: 0.6rem 1.8rem;
+        border-radius: 0.4rem;
+        border: none;
+        font-size: 1.1rem;
+        background-color: #221313;
+        color: white;
+      }
+    }
+  }
+
+  section.hero-2 {
+    width: 100%;
+    display: flex;
+    padding: 1.1rem 1.1rem;
+
+
+    .boxes {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 1.1rem 1.1rem;
+      gap: 2rem;
+
+      .box-1 {
+        i {
+          font-size: 2.2rem;
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 0.5rem 0.5rem;
+
+        }
+
+        h1 {
+          font-size: 1.4rem;
+          margin-top: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          margin-top: 1rem;
+        }
+      }
+
+      .box-2 {
+        i {
+          font-size: 2.2rem;
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 0.5rem 0.5rem;
+
+        }
+
+        h1 {
+          font-size: 1.4rem;
+          margin-top: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          margin-top: 1rem;
+        }
+      }
+
+      .box-3 {
+        i {
+          font-size: 2.2rem;
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 0.5rem 0.5rem;
+
+        }
+
+        h1 {
+          font-size: 1.4rem;
+          margin-top: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  section.hero-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1rem 1.1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      border-bottom: 2px solid rgb(70, 176, 218);
+    }
+
+    p {
+      padding: 1.1rem 2rem;
+      text-align: center;
+      font-size: 1.1rem;
+      opacity: 0.7;
+    }
+
+    video {
+      width: 100%;
+    }
+  }
+
+  section.hero-4 {
+    width: 100%;
+    padding: 1.1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+
+      .card-1 {
+        width: 100%;
+        display: flex;
+
+        .left {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h1{
+            font-size: 1.7rem;
+            text-align: center;
+          }
+          p{
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 1.1rem;
+          }
+          button{
+      width: 60%;
+      padding: 0.7rem 2rem;
+          border: none;
+          border-radius: 0.5rem;
+          border: 2px solid skyblue;
+          color: skyblue;
+          }
+        }
+
+        .right {
+          width: 50%;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 1;
+          }
+        }
+      }
+
+      
+      .card-2 {
+        width: 100%;
+        display: flex;
+
+        .left {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h1{
+            font-size: 1.7rem;
+            text-align: center;
+          }
+          p{
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 1.1rem;
+          }
+          button{
+      width: 60%;
+      padding: 0.7rem 2rem;
+          border: none;
+          border-radius: 0.5rem;
+          border: 2px solid skyblue;
+          color: skyblue;
+          }
+        }
+
+        .right {
+          width: 50%;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 1;
+          }
+        }
+      }
+    }
+  }
+
+  
+  section.hero-5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1rem 1.1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      border-bottom: 2px solid rgb(70, 176, 218);
+    }
+
+    p {
+      padding: 1.1rem 1.5rem;
+      text-align: center;
+      font-size: 1.1rem;
+      opacity: 0.7;
+    }
+
+    button{
+      padding: 0.7rem 4rem;
+          border: none;
+          border-radius: 0.5rem;
+          border: 2px solid skyblue;
+          color: skyblue;
+          }
+    
+  }
+
+  footer{
+    width: 100%;
+    padding: 2rem 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7rem;
+    background-color: antiquewhite;
+
+
+    .left{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      h4{
+        font-size: 1.1rem;
+        font-weight:400;
+        text-align: center;
+      }
+      a{
+        text-align: center;
+        color: black;
+        padding: 1.1rem;
+      }
+    }
+
+    .right{
+      width: 100%;
+      display: flex;
+      gap: 4rem;
+      justify-content: center;
+
+      h3{
+        padding: 1.1rem 0rem;
+      }
+
+      a{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        opacity: 0.7;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+
+    nav {
+      gap: 20%;
+    }
+
+    section.hero-1 {
+      background-image: url(./laptop-mountain.jpeg);
+      background-position: center;
+      background-size: cover;
+
+      h1 {
+        color: rgb(0, 102, 255);
+        font-size: 3rem;
+      }
+
+      h3 {
+        color: white;
+        font-size: 3rem;
+      }
+
+      .btn-1 {
+        button {
+          background-color: black;
+
+          &:hover {
+            background-color: rgb(0, 102, 255);
+            color: black;
+            transition: all 0.4s;
+          }
+        }
+      }
+
+    }
+
+    section.hero-2 {
+
+      .boxes {
+        p {
+          padding: 0rem 3rem;
+        }
+      }
+    }
+
+    section.hero-4{
+      .cards{
+        flex-direction: row;
+        border: 2px solid black;
+        align-items: center;
+        justify-content: center;
+
+        .card-1{
+        .right{
+          img{
+            height: 80%;
+            border-radius: 1.5rem;
+          }
+        }
+        }
+        .card-2{
+          .right{
+            img{
+              padding: 1rem;
+              height: 80%;
+              border-radius: 3rem;
+            }
+          }
+          }
+      }
+    }
+
+    footer{
+      flex-direction: row;
+    }
+  }
+
+}
