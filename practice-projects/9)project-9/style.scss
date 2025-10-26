@@ -1,0 +1,773 @@
+@font-face {
+  font-family: roboto;
+  src: url(./Roboto_SemiCondensed-ExtraBoldItalic.ttf);
+}
+
+@mixin roboto{
+  font-family: roboto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 1.1rem 1.1rem;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem 1.1rem;
+  background-color: #111;
+  color: white;
+  margin: 1.1rem 0rem;
+  border: none;
+  border-radius: 2rem;
+
+  .left-nav{
+    display: none;
+  }
+
+  .center-logo{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+
+    img{
+      object-fit: cover;
+      object-position: center;
+      width: 7%;
+    }
+
+    h3{
+      font-size: 1.2rem;
+      @include roboto;
+      color: #fff;
+    }
+  }
+
+
+  .right-nav{
+    display: none;
+  }
+}
+
+section.hero-1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.1rem 1.1rem;
+  @include roboto;
+
+  h4{
+    border: 1px solid black;
+    padding: 0.4rem 1.1rem;
+    border-radius: 2rem;
+  }
+
+  h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    span{
+      color: orangered;
+    }
+  }
+
+.hero-content{
+  width: 100%;
+  display: flex;
+  padding: 1.1rem 1.1rem;
+  justify-content: space-around;
+  flex-direction: column;
+
+
+  .left-para{
+    width: 100%;
+    padding: 1.1rem 1.5rem;
+    font-size: 1.1rem;
+    
+    p{
+      text-align: center;
+    }
+
+}
+
+.center-img{
+width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./logo\ j\ orange.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .btn{
+    display: flex;
+    gap: 0.4rem;
+    background-color: #f4f4f4;
+    border-radius: 2rem;
+    padding: 0.2rem 0.3rem;
+    margin-top: 1.5rem;
+
+    .btn-1{
+      padding: 0.5rem 2rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: orangered;
+      color: white;
+      @include roboto;
+
+      &:hover{
+        background-color: #f4f4f4;
+        color: black;
+        border: 1px solid black;
+        transition: all 0.5s;
+      }
+    }
+
+    
+    .btn-2{
+      padding: 0.5rem 2rem;
+      border: 1px solid black;
+      border-radius: 2rem;
+      background-color: #f4f4f4;
+      color: black;
+      @include roboto;
+
+      &:hover{
+        background-color: #f4f4f4;
+        background-color: orangered;
+        color: white;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+}
+
+.right-para{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 2rem 2rem;
+
+ .icons{
+  i{
+    color: orangered;
+  }
+ }
+ h3{
+  font-size: 2rem;
+  @include roboto;
+ }
+
+ h4{
+  display: flex;
+  border: none;
+  @include roboto;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  border-bottom: 2px solid black;
+ }
+}
+} 
+}
+
+section.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 0;
+  background: #111;
+  border-radius: 2rem;
+
+
+/* Common box styles */
+.service-box {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+/* Common image shape */
+.service-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+}
+
+/* ---------- Box Variants ---------- */
+
+/* 1️⃣ UI/UX Design - Gray */
+.service-box.uiux img {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.service-box.uiux {
+  background: #1e1e1e;
+}
+
+/* 2️⃣ Web Design - Orange Highlight */
+.service-box.web img {
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 95%);
+}
+.service-box.web {
+  background: linear-gradient(145deg, #ff4d00, #ff6a00);
+}
+
+/* 3️⃣ Landing Page - White */
+.service-box.landing img {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.service-box.landing {
+  background: #f7f7f7;
+  color: #111;
+}
+
+/* Text spacing */
+.service-box h3 {
+  margin-top: 240px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.service-box p {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  line-height: 1.5;
+}
+}
+
+section.experience{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+padding: 1.1rem 1.1rem;
+gap: 3rem;
+
+.left-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  h1{
+    color: black;
+  }
+
+  p{
+    font-size: 1.1rem;
+    color: black;
+  }
+}
+
+.middle{
+  h1{
+    padding: 1.1rem 2rem;
+    color: white;
+    border-radius: 2rem;
+    background-color:orange;
+  }
+}
+
+.right-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+
+  h1{
+    color: black;
+  }
+
+  p{
+    font-size: 1.1rem;
+    color: black;
+  }
+}
+
+}
+
+section.hire-me{
+display: flex;
+align-items: center;
+flex-direction: column;
+  width: 100%;
+  background-color: rgb(206, 200, 193);
+  padding: 1.1rem 1.1rem;
+
+  .left{
+    width: 100%;
+    background-image: url(./logo\ j\ orange.png);
+    background-size: cover;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+text-align: center;
+
+h1{
+  padding: 1.1rem 1.1rem;
+  font-size: 1.9rem;
+  text-transform: capitalize;
+
+  span{
+    color: orangered;
+  }
+}
+p{
+  padding: 2rem 1.1rem;
+  font-size: 1.2rem;
+}
+  }
+
+  .perform{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1.9rem 1.1rem;
+
+    .left-1{
+      @include roboto;
+      opacity: 0.8;
+      p{
+        padding: 0.5rem 0rem
+      }
+    }
+    .right-1{
+      @include roboto;
+      opacity: 0.8;
+      p{
+        padding: 0.5rem 0rem
+      }
+    }
+  }
+
+  h4{
+    width: fit-content;
+    padding: 0.7rem 2.5rem;
+    border: 1px solid orangered;
+    color: orangered;
+    border-radius: 2rem;
+  }
+}
+
+section.portfolio{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.1rem 1.1rem;
+
+  .left{
+    width: 100%;
+    margin-top: 2rem;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      border-radius: 2rem;
+    }
+
+    h1{
+      margin-bottom: 1rem;
+      span{
+        color: orangered;
+      }
+    }
+  }
+  .right{
+    width: 100%;
+ margin-top: 2rem;
+   h3{
+ float: right;
+ padding: 0.4rem 2rem;
+ background-color: #ff4d00;
+ color: white;
+ border-radius: 2rem;
+ margin-bottom: 1rem;
+   }
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      border-radius: 2rem;
+    }
+  }
+}
+
+section.bottom-port{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.1rem 1.1rem;
+  
+  .btn-2{
+    display: flex;
+    gap: 1rem;
+
+
+
+    button{
+      padding: 0.1rem 2rem;
+      border-radius: 2rem;
+      border: none;
+      background-color:orange;
+      color: black;
+      font-size: 0.8rem
+    }
+  }
+  h1{
+    @include roboto;
+    font-size: 1.2rem;
+    padding: 1.1rem 1.1rem;
+    
+
+    i{
+      background-color: orangered;
+      border-radius: 50%;
+      color: white;
+    }
+  }
+  p{
+    @include roboto;
+    font-size: 0.9rem;
+    padding: 0.3rem 1.1rem;
+    opacity: 0.7;
+  }
+}
+
+section.feedback{
+  width: 100%;
+  padding: 1.1rem 1.1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #111;
+
+  h1{
+    color: white;
+    text-align: center;
+    span{
+      color: orangered;
+      text-align: center;
+    }
+  }
+  p{
+    color: white;
+    padding: 1.1rem 1.1rem;
+    text-align: center;
+  }
+
+  .boxes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #272525;
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+    padding: 1.1rem 1.1rem;
+
+    .box-1{
+      display: flex;
+      flex-direction: column;
+      padding: 0.7rem 0.8rem;
+   h1{
+    font-size: 0.9rem;
+     i{
+      color: orangered;
+    }
+   }
+   p{
+    font-size: 0.8rem;
+   }
+    }
+
+    .box-2{
+      display: flex;
+      flex-direction: column;
+      padding: 0.7rem 0.8rem;
+   h1{
+    font-size: 0.9rem;
+     i{
+      color: orangered;
+    }
+   }
+   p{
+    font-size: 0.8rem;
+   }
+    }
+
+    .box-3{
+      display: flex;
+      flex-direction: column;
+      padding: 0.7rem 0.8rem;
+   h1{
+    font-size: 0.9rem;
+     i{
+      color: orangered;
+    }
+   }
+   p{
+    font-size: 0.8rem;
+   }
+    }
+
+    .profile{
+      display: flex;
+      width: 100%;
+      color: white;
+      gap: 0.4rem;
+      img{
+        border-radius: 50%;
+      }
+
+      .gk{
+        font-size: 0.8rem;
+
+        h5{
+          opacity: 0.8;
+        }
+      }
+      img{
+        width: 10%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 920px){
+  main{
+
+    nav{
+      align-items: center;
+      .center-logo{
+        width: 100%;
+
+        img{
+          object-fit: cover;
+          width: 4%;
+        }
+      }
+
+      .left-nav{
+        display: flex;
+        gap: 2rem;
+        padding: 0rem 1.1rem;
+        a{
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size:1.1rem;
+
+        &:hover{
+          color: orangered;
+          transition: all 0.5s;
+        }
+        }
+      }
+
+      .right-nav{
+        display: flex;
+        gap: 2rem;
+        padding: 0rem 1.1rem;
+
+        a{
+          color: white;
+          text-decoration: none;
+          text-transform: capitalize;
+          font-size:1.1rem;
+
+          &:hover{
+            color: orangered;
+            transition: all 0.5s;
+          }
+          }
+      }
+    }
+
+    section.hero-1{
+       
+      h1{
+        font-size: 4.5rem;
+        line-height: 1.1;
+      }
+     .hero-content{
+      flex-direction: row;
+
+      .left-para{
+        padding: 2rem 2.5rem;
+        font-size: 1.5rem;
+        opacity: 0.6;
+      }
+      .center-img{
+        width: 100%;
+        img{
+          width: 100%;
+          object-fit: cover;
+        }
+        .btn{
+          background-color: #f4f4f4;
+          border-radius: 2rem;
+          padding: 0.1rem 0.2rem;
+      
+      
+          .btn-1{
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            padding: 0.5rem 1.4rem;
+            @include roboto;
+          }
+          .btn-2{
+            background-color: #f4f4f4;
+            color: black;
+            border: 2px solid black;
+            border-radius: 2rem;
+            padding: 0.5rem 1.4rem;
+            @include roboto;
+          }
+        }
+      }
+
+      .right-para{
+        padding: 2rem 2.5rem;
+        font-size: 1.5rem;
+        opacity: 0.6;
+      }
+    }
+    }
+
+    .services{
+      flex-direction: row;
+    }
+
+    section.experience{
+      background-color: orangered;
+      flex-direction:row;
+      border-radius: 2rem;
+padding: 1.1rem 1.1rem;
+margin-top: 2rem;
+
+      .right-text{
+        margin-top: 2.6rem;
+        p{
+         font-size: 1.1rem;
+        }
+      }
+      .middle{
+        width: 100%;
+        flex-direction: row;
+  h1{
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    text-align: start
+  }
+      }
+    }
+
+    section.hire-me{
+      margin-top: 2rem;
+      border-radius: 2rem;
+      flex-direction: row;
+
+      .right{
+        flex-direction: column;
+      }
+      .left{
+        width: 80%;
+      }
+    }
+
+
+    section.portfolio{
+      flex-direction: row;
+      gap: 2rem;
+    }
+   
+    section.bottom-port{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .btn-2{
+        button{
+          padding: 0.7rem 3rem;
+        }
+      }
+   p{
+    padding: 1.1rem 20rem;
+    opacity: 0.7;
+   }
+    }
+
+    section.feedback{
+
+      .boxes{
+        flex-direction: row;
+        align-items: center;
+
+       .profile{
+
+        img{
+        border-radius: 0.6rem;
+        }
+       }
+      }
+    }
+  }
+}
